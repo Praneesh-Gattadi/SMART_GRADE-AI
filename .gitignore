@@ -1,0 +1,36 @@
+# Environments & Secrets
+.env
+.env.local
+*.env
+*.pem
+*.key
+smartgrade-key*.pem
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.db
+smartgrade.db
+models_backup.py
+
+# Uploaded Evaluation Documents
+uploads/
+backend/uploads/
+
+# Node & Frontend Build Artifacts
+node_modules/
+smartgrade-frontend/node_modules/
+smartgrade-frontend/dist/
+smartgrade-frontend/build/
+
+# Logs & Temporary Files
+*.log
+*.txt
+tmp_*
+scratch/
+
+# OS Artifacts
+.DS_Store
+Thumbs.db

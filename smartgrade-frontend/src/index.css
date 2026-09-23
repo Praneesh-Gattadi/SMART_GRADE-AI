@@ -1,0 +1,56 @@
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 246 80% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 246 80% 96%;
+    --accent-foreground: 246 80% 50%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 246 80% 60%;
+    --radius: 0.75rem;
+    --chart-1: 246 80% 60%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  * { @apply border-border outline-ring/50; }
+  
+  body { 
+    @apply bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary;
+    background-color: #f8fafc;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.08), transparent 45%),
+      radial-gradient(ellipse at 85% 10%, rgba(168, 85, 247, 0.06), transparent 50%),
+      radial-gradient(ellipse at 15% 20%, rgba(59, 130, 246, 0.06), transparent 50%);
+    background-attachment: fixed;
+  }
+
+  .theme {
+    --font-sans: 'Geist Variable', 'Inter', sans-serif;
+  }
+  
+  html {
+    @apply font-sans;
+  }
+}
